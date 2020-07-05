@@ -1,0 +1,318 @@
+a{text-decoration: none; color: black;}
+input[type="checkbox"]{display: none;}
+
+body *{font-family: 'Nanum Gothic';/*400, 700 800*/ word-break: keep-all;}
+section.company ul li h3,section.product > ul li,
+section.product ol li ul li h4 strong, section.product input, footer *{font-family: "Santana-Bold";}
+.section_head h2, footer div div h2, header div.head_top div nav ul li a{font-family: "Santana-Black";}
+/* font */
+section.company, section.product, section.gallery, section.service div.wrap, section.store{margin:0 auto 150px auto; width: 1200px;}
+
+.section_head{text-align: center;}
+.section_head h2{font-size: 22px; margin-bottom: 20px;}
+.section_head hr{width: 75px; height: 4px; background-color: #0159a4; border: none;  margin-bottom: 70px;}
+.section_head p{font-size: 18px; font-weight: 700; margin-bottom: 70px;}
+/* 각 section head */
+header{margin-bottom: 150px;}
+header video{width: 100%;}
+/* header fin */
+section.company{margin:0 auto 150px auto; width: 1200px;}
+section.company ul{display: flex; width: 100%; transition: 1s; }
+section.company ul li{transition: 1s; overflow: hidden; line-height: 11px; flex: 1; position: relative; opacity: 1;}
+section.company ul li:not(:nth-of-type(4)){margin-right: 30px;}
+section.company ul li img{margin-left: -140px; height: 160px; transition: 1s;}
+section.company ul li h3{height: 40px; width: 100%; text-align: center; transition: 1s; line-height: 40px; background-color: #0159a4; color: #ffdb00;}
+section.company ul li p{visibility: hidden; position: absolute; text-align: center; width: 535px; left: 0px; top: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 19px; line-height: 35px; height: 200px; font-weight: 900;}
+section.company ul li p strong{font-weight: 800; font-size: 24px;}
+/* company fin */
+section.product{text-align: center;}
+section.product > ul{display: flex; justify-content: space-between; margin-bottom: 30px;}
+section.product > ul li{width: 200px; transition: 1s; text-align: center; height: 35px; line-height: 35px; cursor: pointer;}
+section.product > ul li.productMenuActive{background-color: #ffdb00; transition: 1s;}
+section.product > ul li{border-right: 2px solid black;}
+section.product > ul li:first-of-type{border-left: 2px solid black;}
+section.product ol{margin-bottom: 70px; position: relative; height: 886.67px;}
+section.product ol > li{position: absolute; left: 0; top: 0; opacity: 0;}
+section.product ol > li.productActive{opacity: 1; transition: 1s;}
+section.product ol li ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+section.product ol li ul li{float: left; text-align: center; margin-top: 25px;}
+section.product ol li ul li img{width: 80%; margin-bottom: 15px;}
+section.product ol li ul li h4{font-size: 18px; font-weight: 800; margin-bottom: 20px;}
+section.product ol li ul li p{font-size: 16px; font-weight: 700; margin-bottom: 10px;}
+section.product ol li ul li span{font-size: 14px; font-weight: 700;}
+section.product input{border: 2px solid black; font-size: 24px; background-color: white; width: 170px; height: 45px; transition: 0.5s; cursor: pointer;}
+section.product input:hover{border: 2px solid #0159a4; background-color: #0159a4; color: #ffdb00; transition: 0.5s;}
+/* product fin */
+section.gallery > div:nth-of-type(2){position: relative; perspective: 400px; transform-style: preserve-3d;}
+section.gallery > div:nth-of-type(2) ul{position: absolute; left: 0; top: 0;}
+section.gallery > div:nth-of-type(2) ul li{position: absolute; box-shadow: 0px 3px 19px 5px black;  transform: translateZ(5px); cursor: pointer;}
+section.gallery > div:nth-of-type(2) ul li:hover{border: 4px solid black; transform: translateZ(7px);}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(1){left: 400px; top: 87px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(2){left: 789px; top: 265px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(3){left: 658px; top: 533px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(4){left: 502px; top: 712px;}
+section.gallery > div:nth-of-type(2) ol{position: absolute; left: 0; top: 0;}
+section.gallery > div:nth-of-type(2) ol li:nth-of-type(1){left: 550px; top: 40px;}
+section.gallery > div:nth-of-type(2) ol li:nth-of-type(2){left: 939px; top: 220px;}
+section.gallery > div:nth-of-type(2) ol li:nth-of-type(3){left: 798px; top: 480px;}
+section.gallery > div:nth-of-type(2) ol li:nth-of-type(4){left: 230px; top: 480px;}
+section.gallery > div:nth-of-type(2) ol li.galleryActive{opacity: 1; transition: 0.5s;}
+section.gallery > div:nth-of-type(2) ol li{border: 7px solid black; position: absolute; opacity: 0; transition: 0.5s; background-color: white; text-align: center; font-weight: 700; width: 240px; padding: 30px;}
+section.gallery > div:nth-of-type(2) ol li strong{position: absolute;right: 12px; top: 7px; font-size: 30px; cursor: pointer;}
+section.gallery > div:nth-of-type(2) ol li img{margin-bottom: 20px;}
+section.gallery > div:nth-of-type(2) ol li h3{font-size: 18px; font-weight: 800; margin-bottom: 15px;}
+section.gallery > div:nth-of-type(2) ol li p{font-size: 16px; margin-bottom: 10px;}
+section.gallery > div:nth-of-type(2) ol li span:nth-of-type(1){font-size: 14px;}
+section.gallery > div:nth-of-type(2) ol li span:nth-of-type(2){display: block; margin-top: 30px; text-align: right; cursor: pointer;}
+section.gallery > div:nth-of-type(2) ol li span:nth-of-type(2):hover{color: red;}
+/* gallery fin*/
+section.service{background: url(../img/service_bg.jpg) no-repeat center center; padding-top: 150px; color: white;}
+section.service ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+section.service ul li{float: left; width: 33.33%; margin-bottom: 150px; text-align: center;}
+section.service ul li img{border-radius: 100%;margin-bottom: 30px;}
+section.service ul li h3{font-size: 18px; font-weight: 800; margin-bottom: 20px;}
+section.service ul li p{font-size: 14px; line-height: 26px; font-weight: 700;}
+/* service fin */
+section.store{text-align: center;}
+section.store div img{width: 80%;}
+section.store div:nth-of-type(2){position: relative;}
+section.store div > i{position: absolute; right: 145px; top: 40px; z-index: 6; opacity: 0;}
+section.store div > i.Active100{opacity: 1; transition: 0.5s;}
+section.store div ul li{color: white; position: absolute; left: 0; top: 0;z-index: 5; width: 80px; height: 80px;}
+section.store div ul li i{position: absolute; }
+section.store div ul li div.address{display: none;}
+section.store div ul li i:hover ~ div.address{display: block;}
+section.store div ul li.Active0{visibility: hidden;}
+section.store div ul li i{left: 15px; top: 20px; cursor: pointer;}/*map아이콘 위치*/
+section.store div ul li div.address{position: absolute; left: 15px; top: 55px;}/*주소 위치*/
+section.store div ul li:nth-of-type(1){left: 370px; top: 80px;}/*li width: 80px; height: 80px; 위치*/
+section.store div ul li:nth-of-type(2){left: 750px; top: 280px;}
+section.store div ul li:nth-of-type(3){left: 390px; top: 440px;}
+section.store div ul li:nth-of-type(4){left: 730px; top: 720px;}
+section.store div ul li div.address p{background-color: black; font-size: 16px; font-weight: 800; width: 130px; height: 30px; line-height: 30px; margin-bottom: 10px;}
+section.store div ul li div.address p:nth-of-type(2){font-size: 14px; width: 300px;}
+section.store div ol li img{position: absolute; left: 120px; top: 0; opacity: 0; transition: 0.5s;}
+section.store div ol li img.Active50{opacity: 0.6; transition: 0.5s;}
+section.store div ol li img.Active20{opacity: 0.2; transition: 0.5s;}
+section.store div ol li img.Active100{opacity: 1; transition: 0.5s;}
+section.store div ol li div{width: 420px; opacity: 0; padding: 30px; background-color: black; color: white;  font-weight: 700; text-align: left; position: absolute; left: 170px; bottom: 50px;}
+section.store div ol li div.addressActive{opacity: 1; z-index: 6;}
+section.store div ol li div p:nth-of-type(1){font-size: 20px; margin-bottom: 10px;}
+section.store div ol li div p:nth-of-type(2){font-size: 18px; margin-bottom: 20px;}
+section.store div ol li div p:nth-of-type(3){line-height: 24px; font-size: 14px; margin-bottom: 15px;}
+section.store div ol li div p strong{font-weight: 800; font-size: 16px;}
+section.store div ol li div span{font-size: 12px;}
+/* store fin */
+footer{background-color: #161616; color: white;}
+footer div.footer_top{padding-top:150px; display: flex; align-items: center; justify-content: space-between; margin: 0 auto 50px auto; width: 1200px;}
+footer div.footer_top h1 img{width: 120%;}
+footer div.footer_top div:nth-of-type(1) ul{display: flex; font-size: 18px; margin-bottom: 30px;}
+footer div.footer_top div ul li{width: 140px; border-right:1px solid white; border-left:1px solid white; text-align: center; cursor: pointer;}
+footer div.footer_top div address{margin-bottom: 10px; font-size: 16px;}
+footer div.footer_top div p{font-size: 16px;}
+footer div.footer_top div h2{font-size: 22px; margin-bottom: 40px;}
+footer hr{margin: 0 auto; width: 1200px; border: 2px dotted white;}
+footer div.footer_bottom{padding-bottom: 150px; margin: 50px auto 0 auto; width: 1200px; display: flex; justify-content: space-between;}
+footer div.footer_bottom p{line-height: 25px; font-size: 18px; cursor: pointer;}
+/* footer fin */
+
+@media screen and (max-width:767px){
+    .section_head p{font-size: 16px; width: 100%; line-height: 30px; margin-left: auto; margin-right: auto;}
+    section{padding: 0 20px;}
+    header div.head_top, section.company, section.product, section.gallery, section.service div.wrap, section.store, footer div.footer_top{max-width: 500px; width: 100%;}
+    header div.head_top{max-width: 767px; margin: 0 auto 70px auto;}
+    header div.head_top h1{text-align: center; padding: 24px 20px; height: 120px;}
+    header div.head_top h1 img{width: 55%;}
+    header div.head_top div{position: relative;}
+    header div.head_top div label{cursor: pointer; z-index: 12;}
+    header div.head_top div label span{width: 40px; height: 5px; background-color: black; position: absolute; right: 20px; top: -84px; transition: 0.3s;}
+    header div.head_top div label span:nth-of-type(2){top: -72px;}
+    header div.head_top div label span:nth-of-type(3){top: -60px;}
+    /* 햄버거 */
+    header div.head_top div label span.labelActive{background-color: white; z-index: 12; position: fixed; width: 50px;}
+    header div.head_top div label span:nth-of-type(1).labelActive01{top: 60px; transform: rotateZ(45deg); transform-origin: center center;}
+    header div.head_top div label span:nth-of-type(2).labelActive02{display: none;}
+    header div.head_top div label span:nth-of-type(3).labelActive03{top: 60px; transform: rotateZ(-45deg); transform-origin: center center;}
+    /* 햄버거 클릭 */
+    header div.head_top div.menu{opacity: 0; visibility: hidden; position: fixed; text-align: center; width: 100vw; height: 100vh; top: 0; background-color: black; z-index: 11;}
+    header div.head_top div.menu nav ul{height: 100vh; padding-top: 60px; display: flex; flex-direction: column; justify-content: space-evenly;}
+    header div.head_top div.mobileMenu{opacity: 0.95; visibility: visible;}
+    header div.head_top div nav ul > li a{font-weight: 800; font-size: 50px; color: white;}
+    header div.head_top div nav ul > li ol{display: none;}
+    /* header fin */
+    section.company ul{display: block; text-align: center;}
+    section.company ul li:not(:nth-of-type(4)){margin-right: 0; margin-bottom: 50px;}
+    section.company ul li h3{width: 100%; margin: 0 auto; font-size: 16px;}
+    section.company ul li img{height: 200px; width: 100%; margin-left: 0; opacity: 0.3;}
+    section.company ul li p{visibility: visible; padding: 20px 15px; margin: 0 auto; width: 100%; line-height: 28px; font-size: 16px; font-weight: 800; left: 0px;}
+    section.company ul li p strong{font-size: 20px;}
+    /* company fin */
+    section.product h1{display: none;}
+    section.product > ul{display: block;}
+    section.product > ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+    section.product > ul li{float: left; width: 33.33%; box-sizing: border-box;}
+    section.product > ul li:nth-of-type(4){border-left: 2px solid black;}
+    section.product > ul li:nth-of-type(n+4){border-top: 2px solid black;}
+    section.product ol li ul li{width: 100%; box-sizing: border-box;}
+    section.product ol li ul li:nth-of-type(2n-1){margin-right: 0%;}
+    section.product ol li ul li img{width: 100%; max-width: 280px;}
+    section.product ol{height: 2424px;}
+    section.product ol > li{height: 100%;}
+    /* product fin */
+    section.gallery div > img{width: 280px;}
+    section.gallery div ul li img{width: 25px;}
+    section.gallery > div:nth-of-type(2){margin: 0 auto; width: 280px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(1){left: 96px; top: 22px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(2){left: 187px; top: 65px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(3){left: 154px; top: 124px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(4){left: 119px; top: 167px;}
+    section.gallery > div:nth-of-type(2) ol{height: 100%;}
+    section.gallery > div:nth-of-type(2) ol li{border: 3px solid black; height: 100%; width: 90px; padding: 35px 0; z-index: 99;}
+    section.gallery > div:nth-of-type(2) ol li img{display: none;}
+    section.gallery > div:nth-of-type(2) ol li h3{font-size: 12px;}
+    section.gallery > div:nth-of-type(2) ol li p{font-size: 12px; line-height: 20px;}
+    section.gallery > div:nth-of-type(2) ol li span:nth-of-type(1){font-size: 12px;}
+    section.gallery > div:nth-of-type(2) ol li span:nth-of-type(2){margin-top: 15px; text-align: center;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(1){left: 0px; top: 0px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(2){left: 0px; top: 0px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(3){left: 0px; top: 0px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(4){left: 0px; top: 0px;}
+    /* gallery fin */
+    section.service ul li{width: 100%;}
+    section.service{background-size: cover;}
+    /* service */
+    section.store div > img{display: none;}
+    section.store div img{width: 100%;}
+    section.store div i{display: none;}
+    section.store div ul{display: none;}
+    section.store div ol li:not(:last-of-type){margin-bottom: 70px;}
+    section.store div ol li img{position: relative; opacity: 1; left: 0;}
+    section.store div ol li div{opacity: 1; position: relative; left: 0; bottom: 0;}
+    section.store div ol li div{width: 100%; margin: 0 auto;}
+    section.store div ol li div p:nth-of-type(2){line-height: 30px;}
+    /* store fin*/
+    footer div.footer_top{display: block; text-align: center; padding: 150px 20px 0 20px;}
+    footer div.footer_top h1 img{width: 176px;}
+    footer div.footer_top h1{margin-bottom: 40px;}
+    footer div.footer_top div ul li{font-size: 14px;}
+    footer div.footer_top div address{font-size: 15px;}
+    footer div.footer_top div:nth-of-type(1){margin-bottom: 40px;}
+    footer div.footer_top div:nth-of-type(1) ul{justify-content: center;}
+    footer div.footer_top div h2{margin-bottom: 20px;}
+    footer hr{max-width: 420px; width: 90%;}
+    footer div.footer_bottom{font-size: 14px; padding: 0px 20px 150px 20px; max-width: 420px; width: 100%; display: block; text-align: center;}
+    footer div.footer_bottom p:nth-of-type(1){margin-bottom: 30px;}
+    footer div.footer_bottom p{line-height: 25px;}
+    section.store div > i{top: 20px; right: 60px;}
+    /* footer fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .section_head p{font-size: 16px;}
+    section{padding: 0 40px;}
+    header div.head_top, section.company, section.product, section.gallery, section.service div.wrap, section.store, footer div.footer_top{max-width: 768px; width: 100%;}
+    header div.head_top{max-width: 1279px; margin: 0 auto;}
+    header div.head_top h1{text-align: center; padding: 24px 40px; height: 120px;}
+    header div.head_top div{position: relative;}
+    header div.head_top div label{cursor: pointer; z-index: 12;}
+    header div.head_top div label span{width: 40px; height: 5px; background-color: black; position: absolute; right: 40px; top: -72px; transition: 0.3s;}
+    header div.head_top div label span:nth-of-type(2){top: -60px;}
+    header div.head_top div label span:nth-of-type(3){top: -48px;}
+    /* 햄버거 */
+    header div.head_top div label span.labelActive{background-color: white; z-index: 12; position: fixed; width: 50px;}
+    header div.head_top div label span:nth-of-type(1).labelActive01{top: 60px; transform: rotateZ(45deg); transform-origin: center center;}
+    header div.head_top div label span:nth-of-type(2).labelActive02{display: none;}
+    header div.head_top div label span:nth-of-type(3).labelActive03{top: 60px; transform: rotateZ(-45deg); transform-origin: center center;}
+    /* 햄버거 클릭 */
+    header div.head_top div.menu{opacity: 0; visibility: hidden; position: fixed; text-align: center; width: 100vw; height: 100vh; top: 0; background-color: black; z-index: 11;}
+    header div.head_top div.menu nav ul{height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly;}
+    header div.head_top div.mobileMenu{opacity: 0.95; visibility: visible;}
+    header div.head_top div nav ul > li a{font-weight: 800; font-size: 70px; color: white;}
+    header div.head_top div nav ul > li ol{display: none;}
+    /* header fin */
+    section.company ul{display: block; text-align: center;}
+    section.company ul li:not(:nth-of-type(4)){margin-right: 0; margin-bottom: 50px;}
+    section.company ul li h3{width: 100%; margin: 0 auto;}
+    section.company ul li img{height: 200px; width: 100%; margin-left: 0; opacity: 0.3;}
+    section.company ul li p{visibility: visible; margin: 0 auto; width: 100%; height: calc(100% - 40px); left: 0px; top: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+    section.company ul li p strong{width: 100%;}
+    /* company fin */
+    section.product h1{display: none;}
+    section.product > ul{display: block;}
+    section.product > ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+    section.product > ul li{float: left; width: 33.33%; box-sizing: border-box;}
+    section.product > ul li:nth-of-type(4){border-left: 2px solid black;}
+    section.product > ul li:nth-of-type(n+4){border-top: 2px solid black;}
+    section.product ol{height: 1164.56px;}
+    section.product ol li ul li{width: 48%; box-sizing: border-box;}
+    section.product ol li ul li:nth-of-type(2n-1){margin-right: 4%;}
+    /* product fin */
+    section.gallery div > img{width: 100%;}
+    section.gallery div ul li img{width: 67px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(1){left: 232px; top: 53px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(2){left: 449px; top: 159px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(3){left: 377px; top: 307px;}
+    section.gallery > div:nth-of-type(2) ul li:nth-of-type(4){left: 289px; top: 412px;}
+    section.gallery > div:nth-of-type(2) ol li{border: 3px solid black; width: 140px; padding: 20px; z-index: 99;}
+    section.gallery > div:nth-of-type(2) ol li img{margin-bottom: 10px; width: 100px; margin-top: 10px;}
+    section.gallery > div:nth-of-type(2) ol li h3{font-size: 16px;}
+    section.gallery > div:nth-of-type(2) ol li p{font-size: 14px; line-height: 20px;}
+    section.gallery > div:nth-of-type(2) ol li span:nth-of-type(1){font-size: 12px;}
+    section.gallery > div:nth-of-type(2) ol li span:nth-of-type(2){margin-top: 20px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(1){left: 80px; top: 40px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(2){left: 540px; top: 110px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(3){left: 540px; top: 160px;}
+    section.gallery > div:nth-of-type(2) ol li:nth-of-type(4){left: 120px; top: 170px;}
+    /* gallery fin */
+    section.service ul li{width: 50%;}
+    section.service{background-size: cover;}
+    /* service */
+    section.store div ol li img{left: 69px;}
+    section.store div ul li:nth-of-type(1){left: 170px; top: 30px;}
+    section.store div ul li:nth-of-type(2){left: 420px; top: 140px;}
+    section.store div ul li:nth-of-type(3){left: 200px; top: 200px;}
+    section.store div ul li:nth-of-type(4){left: 400px; top: 400px;}
+    section.store div ul li div.address p{font-size: 15px; width: 100px;}
+    section.store div ul li div.address p:nth-of-type(2){font-size: 13px; width: 250px;}
+    section.store div ol li div{width: 320px; left: 149px;}
+    section.store div ol li div p:nth-of-type(1){font-size: 18px;}
+    section.store div ol li div p:nth-of-type(2){font-size: 16px;}
+    /* store fin*/
+    footer div.footer_top{display: block; text-align: center;}
+    footer div.footer_top h1 img{width: 176px;}
+    footer div.footer_top h1{margin-bottom: 40px;}
+    footer div.footer_top div:nth-of-type(1){margin-bottom: 40px;}
+    footer div.footer_top div:nth-of-type(1) ul{justify-content: center;}
+    footer div.footer_top div h2{margin-bottom: 20px;}
+    footer hr{max-width: 688px; width: 90%;}
+    footer div.footer_bottom{font-size: 14px; max-width: 688px;}
+    footer div.footer_bottom p{line-height: 25px; font-size: 12px;}
+    /* footer fin */
+}
+@media screen and (min-width:1280px){
+    header > div{position: fixed; width: 100%; background-color: white; z-index: 999; border-bottom: 1px solid #bbb;} 
+    header div.head_top{margin: 0 auto; width: 1200px; height: 120px; display: flex; align-items: center; justify-content: space-between;}
+    header div.head_top div nav ul{display: flex; height: 120px; line-height: 120px;}
+    header div.head_top div nav ul > li{margin-left: 50px;}
+    header div.head_top div nav ul > li a{color: black; font-size: 24px;}
+    header div.head_top div nav ul > li > a:hover{color: #0159a4; border-bottom: 5px solid #0159a4; transition: 0.5s;}
+    header div.head_top div nav ul li ol{display: flex; padding-left: 43%; position: absolute; top: 120px; visibility: hidden; left: 0; width: 100%; background-color: #ffdb00; z-index: 10; transition: 0.5s; opacity: 0; height: 0px; line-height: 70px;}
+    header div.head_top div nav ul li ol.topMenuActive{height: 70px; visibility: visible; transition: 0.5s; opacity: 1;}
+    header div.head_top div nav ul li ol li{margin-right: 60px;}
+    header div.head_top div nav ul li ol li a{font-size: 22px; font-weight: 800;}
+    header div.head_top div nav ul li ol li a:hover{color: white;}
+    header video{padding-top: 120px;}
+    /* header fin */
+    section.company{height: 333px;}
+    section.company ul li.scrollActive{transition: 1s; position: absolute; top: 200px; opacity: 0;}
+    section.company ul li.b{transition-delay: 0.2s;}
+    section.company ul li.c{transition-delay: 0.4s;}
+    section.company ul li.d{transition-delay: 0.6s;}
+    section.company ul li:hover{flex: 1 1 30%;}/* flex : 증가너비 감소너비 기본너비 */
+    section.company ul li:hover img{margin-left: 0; height: 200px; transition: 1s; opacity: 0.3;}
+    section.company ul li:hover h3{height: 0; transition: 1s;}
+    section.company ul li:hover p{visibility: visible; transition-delay: 0.5s;}
+    section.service{background-attachment: fixed;}
+    /* company fin */
+    footer div div ul i:hover{color: #0159a4;}
+    /* footer fin */
+}
